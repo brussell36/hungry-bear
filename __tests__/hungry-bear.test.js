@@ -48,4 +48,9 @@ describe('Fuzzy', () => {
     jest.advanceTimersByTime(3001);
     expect(fuzzy.moodLevel).toEqual(17);
   });
+
+  test('should get very angry if mood level drops to zero', () => {
+    fuzzy.moodLevel = 0;
+    expect(fuzzy.didYouGetEaten()).toEqual(true);
+  });
 });
