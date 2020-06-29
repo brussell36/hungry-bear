@@ -1,11 +1,12 @@
 import { HungryBear } from './../src/hungry-bear.js';
 
-describe('Fuzzy', () => {
+describe('HungryBear', () => {
   jest.useFakeTimers();
   let fuzzy;
 
   beforeEach(function() {
     fuzzy = new HungryBear("Fuzzy");
+    // fuzzy.name === "Fuzzy"
     fuzzy.setHunger();
     fuzzy.setMood();
     fuzzy.setHug();
@@ -22,11 +23,13 @@ describe('Fuzzy', () => {
 
   test('should have a food level of 7 after 3001 milliseconds', () => {
     jest.advanceTimersByTime(3001);
+    // after 1000 miliseconds fuzzy.foodLevel minus 1
     expect(fuzzy.foodLevel).toEqual(7);
   });
 
   test('should get very hungry if the food level drops below zero', () => {
     fuzzy.foodLevel = 0;
+    // set up the conditions for our expect statement to run properly
     expect(fuzzy.didYouGetEaten()).toEqual(true);
   });
 

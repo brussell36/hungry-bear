@@ -38,6 +38,6 @@ export class HungryBear {
   }
   
   happy() {
-    
+    this.moodLevel = 20;
   }
 }
