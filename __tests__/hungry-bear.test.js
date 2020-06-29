@@ -7,6 +7,7 @@ describe('Fuzzy', () => {
   beforeEach(function() {
     fuzzy = new HungryBear("Fuzzy");
     fuzzy.setHunger();
+    fuzzy.setMood();
   });
 
   afterEach(function() {
@@ -39,7 +40,7 @@ describe('Fuzzy', () => {
     expect(fuzzy.foodLevel).toEqual(10);
   });
 
-  test('should have a mood level of 10', () => {
+  test('should have a mood level of 20', () => {
     expect(fuzzy.moodLevel).toEqual(20);
   });
 
