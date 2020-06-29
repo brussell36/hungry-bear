@@ -15,12 +15,7 @@ export class HungryBear {
   setMood() {
     setInterval(() => {
       this.moodLevel--;
-    }, 1000);
-    // if(this.moodLevel > 0) {
-    //   return true;
-    // }else{
-    //   return false;
-    // } 
+    }, 1000); 
   }
 
   didYouGetEaten() {
