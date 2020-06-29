@@ -1,4 +1,4 @@
-import { HungryBear } from './../src/hungrybear.js';
+import { HungryBear } from './../src/hungry-bear.js';
 
 describe('Fuzzy', () => {
   jest.useFakeTimers();
@@ -37,5 +37,9 @@ describe('Fuzzy', () => {
     jest.advanceTimersByTime(9001);
     fuzzy.feed();
     expect(fuzzy.foodLevel).toEqual(10);
+  });
+
+  test('should have a mood level of 10', () => {
+    expect(fuzzy.moodLevel).toEqual(10);
   });
 });
