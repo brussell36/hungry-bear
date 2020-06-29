@@ -4,6 +4,7 @@ export class HungryBear {
     this.name = name;
     this.foodLevel = 10;
     this.moodLevel = 20;
+    this.hugLevel = 30;
   }
 
   setHunger() {
@@ -16,6 +17,12 @@ export class HungryBear {
     setInterval(() => {
       this.moodLevel--;
     }, 1000); 
+  }
+
+  setHug() {
+    setInterval(() => {
+      this.hugLevel--;
+    },1000);
   }
 
   didYouGetEaten() {

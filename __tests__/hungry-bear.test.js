@@ -8,6 +8,7 @@ describe('Fuzzy', () => {
     fuzzy = new HungryBear("Fuzzy");
     fuzzy.setHunger();
     fuzzy.setMood();
+    fuzzy.setHug();
   });
 
   afterEach(function() {
