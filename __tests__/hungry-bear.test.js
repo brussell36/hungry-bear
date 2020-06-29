@@ -54,6 +54,12 @@ describe('Fuzzy', () => {
     fuzzy.moodLevel = 0;
     expect(fuzzy.didYouGetEaten()).toEqual(true);
   });
+
+  test('should have a mood level of 20 if it is happy', () => {
+    jest.advanceTimersByTime(9001);
+    fuzzy.happy();
+    expect(fuzzy.moodLevel).toEqual(20);
+  });
   
   test('should have a hug level of 30 after 4001 milleseconds', () => {
     jest.advanceTimersByTime(4001);
