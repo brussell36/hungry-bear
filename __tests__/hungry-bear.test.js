@@ -40,6 +40,11 @@ describe('Fuzzy', () => {
   });
 
   test('should have a mood level of 10', () => {
-    expect(fuzzy.moodLevel).toEqual(10);
+    expect(fuzzy.moodLevel).toEqual(20);
+  });
+
+  test('should have a mood level of 17 after 3001 milliseconds', () => {
+    jest.advanceTimersByTime(3001);
+    expect(fuzzy.moodLevel).toEqual(17);
   });
 });
