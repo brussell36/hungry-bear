@@ -6,7 +6,6 @@ describe('HungryBear', () => {
 
   beforeEach(function() {
     fuzzy = new HungryBear("Fuzzy");
-    // fuzzy.name === "Fuzzy"
     fuzzy.setHunger();
     fuzzy.setMood();
     fuzzy.setHug();

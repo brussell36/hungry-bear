@@ -26,7 +26,7 @@ export class HungryBear {
   }
 
   didYouGetEaten() {
-    if (this.foodLevel > 0 && this.moodLevel > 0) {
+    if (this.foodLevel > 0 && this.moodLevel > 0 && this.hugLevel > 0) {
       return false;
     } else {
       return true;
@@ -39,5 +39,9 @@ export class HungryBear {
   
   happy() {
     this.moodLevel = 20;
+  }
+
+  hug() {
+    this.hugLevel = 30;
   }
 }
