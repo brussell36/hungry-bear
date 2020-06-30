@@ -7,22 +7,12 @@ export class HungryBear {
     this.hugLevel = 30;
   }
 
-  setHunger() {
+  setLevels() {
     setInterval(() => {
       this.foodLevel--;
-    }, 1000);
-  }
-
-  setMood() {
-    setInterval(() => {
       this.moodLevel--;
-    }, 1000); 
-  }
-
-  setHug() {
-    setInterval(() => {
       this.hugLevel--;
-    },1000);
+    }, 1000);
   }
 
   didYouGetEaten() {
