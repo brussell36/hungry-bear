@@ -16,6 +16,17 @@ display: none;
   margin-top: 5%;
 }
 
+.meter {
+  height: 20px;  /* Can be anything */
+	position: relative;
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
 body {
   background-image: url(https://hub.umd.edu/sites/default/files/2019-04/image/forest-grass-nature-158251_1920x1080.jpg);
   color: white;
