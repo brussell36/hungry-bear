@@ -8,7 +8,7 @@ export class HungryBear {
   }
 
   setLevels() {
-    setInterval(() => {
+    setInterval(() => {  
       this.foodLevel--;
       this.moodLevel--;
       this.hugLevel--;
@@ -26,8 +26,8 @@ export class HungryBear {
   feed() {
     this.foodLevel = 10;
   }
-  
-  happy() {
+
+  scratch() {
     this.moodLevel = 20;
   }
 

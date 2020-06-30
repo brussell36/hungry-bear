@@ -5,15 +5,23 @@ import $ from "jquery";
 import { HungryBear } from './../src/hungry-bear';
 
 $(document).ready(function() {
-  $("#buttons").click(function(event) {
-    event.preventDefault();
-    let fuzzy = new HungryBear("Fuzzy");
-    $("#countdown").show();
-    $("#food").text(fuzzy.foodLevel);
-    $("#scratch").text(fuzzy.moodLevel);
-    $("#hug").text(fuzzy.hugLevel);
-    fuzzy.setLevels();
-    
-    $(".btn-primary").text();
+  let fuzzy = new HungryBear("Fuzzy");
+  fuzzy.setLevels();
+  $("#countdown").show();
+  $("#primary").click(function() {
+    $("#food").html(fuzzy.foodLevel);
+    fuzzy.feed();
+  });
+  $("#success").click(function() {
+    $("#scratch").html(fuzzy.moodLevel);
+    fuzzy.scratch();
+  });
+  $("#warning").click(function() {
+    $("#hug").html(fuzzy.hugLevel);
+    fuzzy.hug();
   });
 });
+
+// setTimeout(function(){
+//   alert("Hello friend! Maybe you should sign up for our newsletter!");
+// }, 2000);

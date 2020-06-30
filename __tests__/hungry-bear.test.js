@@ -59,7 +59,7 @@ describe('HungryBear', () => {
 
   test('should have a mood level of 20 if it is happy', () => {
     jest.advanceTimersByTime(9001);
-    fuzzy.happy();
+    fuzzy.scratch();
     expect(fuzzy.moodLevel).toEqual(20);
   });
 

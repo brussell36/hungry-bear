@@ -6,19 +6,26 @@
   <title>Hungry Bear game</title>
 </head>
 <body>
-  <div class="container">
+  <div class="w3-container">
     <img class="bear-img" src="https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?ixlib=rb-1.2.1&w=1000&q=80" alt="Brown Bear">
     <h1>Will you get eaten!?</h1>
     <div id="buttons">
-      <button class="btn btn-primary">Feed!</button>
-      <button class="btn btn-success">Scratch!</button>
-      <button class="btn btn-warning">Hug!</button>
+      <button id="primary" class="btn btn-primary">Feed!</button>
+      <button id="success" class="btn btn-success">Scratch!</button>
+      <button id="warning" class="btn btn-warning">Hug!</button>
     </div>
     <div id="countdown">
-      <p>your feed is up <span id="food"></span></p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-blue w3-center" style="height: 20px; width: 50%"><span id="food"></span></p></div>
+        <p>your feed is up <span id="food"></span></p>
+      </div>
       <p> your scratch is up <span id="scratch"></span></p>
       <p>your hug is up <span id="hug"></span></p>
     </div>
+<div class="w3-light-grey">
+  <div class="w3-red" style="height:24px;width:50%"></div>
+</div><br>
+
   </div>
 </body>
 </html>
