@@ -62,6 +62,11 @@ describe('HungryBear', () => {
     fuzzy.happy();
     expect(fuzzy.moodLevel).toEqual(20);
   });
+
+  test('should get a hug level drops to zero', () => {
+    fuzzy.hugLevel = 0;
+    expect(fuzzy.didYouGetEaten()).toEqual(true);
+  });
   
   test('should have a hug level of 30 after 4001 milleseconds', () => {
     jest.advanceTimersByTime(4001);
